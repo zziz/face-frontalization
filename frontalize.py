@@ -21,7 +21,7 @@ class ThreeD_Model:
 def frontalize(img, proj_matrix, ref_U, eyemask):
     ACC_CONST = 800
     img = img.astype('float32')
-    print "query image shape:", img.shape
+    print("query image shape:", img.shape)
 
     bgind = np.sum(np.abs(ref_U), 2) == 0
     # count the number of times each pixel in the query is accessed
